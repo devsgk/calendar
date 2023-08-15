@@ -1,0 +1,68 @@
+body {
+  background-image: url('./images/bg.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Varela Round', sans-serif;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  font-size: 72px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.image-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.image-box img {
+  width: 150px;
+}
+
+.calandar-container {
+  text-align: center;
+  font-size: 48px;
+}
+
+.grid-container {
+  display: grid;
+  place-items: center;
+  width: 1000px;
+  margin: 150px auto;
+  grid-template-columns: repeat(7, 1fr);
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+  grid-template-rows: repeat(7, 1fr);
+  /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */
+}
+.item {
+  align-self: center;
+  justify-self: center; /* new */
+}
+
+button {
+  top: 50%;
+  height: 8rem;
+  width: 8rem;
+}
+
+.btn--left {
+  position: absolute;
+  left: 50px;
+  top: 650px;
+}
+.btn--right {
+  position: absolute;
+  right: 50px;
+  top: 100px;
+  top: 650px;
+}
